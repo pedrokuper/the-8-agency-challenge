@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "imgURL": "https://images.unsplash.com/photo-1480497985475-b73b62dd7383?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+    "alt_name": "architecture-01"
+  },
+  {
+    "id": 2,
+    "imgURL": "https://images.unsplash.com/photo-1459698180825-593f300f4a1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+    "alt_name": "architecture-02"
+  },
+  {
+    "id": 3,
+    "imgURL": "https://images.unsplash.com/photo-1618679352407-4bdfed501f8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80",
+    "alt_name": "architecture-03"
+  },
+  {
+    "id": 4,
+    "imgURL": "https://images.unsplash.com/photo-1423768164017-3f27c066407f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80",
+    "alt_name": "architecture-04"
+  },
+  {
+    "id": 5,
+    "imgURL": "https://images.unsplash.com/photo-1489465033131-30f7e2025f68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80",
+    "alt_name": "architecture-05"
+  }
+]
