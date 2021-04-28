@@ -1,6 +1,8 @@
 @import "../../styles/variables";
 
 .container {
+   position: sticky;
+   z-index: 1;
   color: $secondary;
   ul {
     display: flex;

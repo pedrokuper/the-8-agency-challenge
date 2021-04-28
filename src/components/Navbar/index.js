@@ -17,7 +17,7 @@ function Navbar() {
           <img src={logo} alt="" />
         </li>
         <li>
-          <Button label="menu" img={contactImg} fontSize="xs" />
+          <Button label="contact" img={contactImg} fontSize="xs" />
         </li>
       </ul>
     </nav>

@@ -1,0 +1,28 @@
+.home-container {
+  margin-top: -80px;
+  overflow: hidden;
+  background-color: rgb(114, 123, 163);
+}
+
+.imgContainer {
+  max-height: 100vh;
+
+  .img {
+    margin: 0 auto;
+    max-width: 100%;
+    filter: brightness(0.75);
+  }
+}
+
+.slick-slider {
+  mix-blend-mode: overlay;
+}
+
+.slick-dots {
+  bottom: 55px !important;
+}
+.dots {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
