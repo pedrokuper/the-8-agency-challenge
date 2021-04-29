@@ -60,7 +60,14 @@ function Home() {
   return (
     <div className="wrapper">
       <Navbar />
+
       <div className="home-container">
+        <div className="title-container">
+          <h3 className="title">Duis a massa</h3>
+          <h3 className="title">sodales, mollis</h3>
+          <h3 className="title">elit non, gravida</h3>
+          <h3 className="title">libero.</h3>
+        </div>
         <Slider {...settings}>
           {homeImages.map((image, i) => {
             return (

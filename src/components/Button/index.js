@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Style.module.scss";
+import { Link } from "react-router-dom";
 
 function Button(props) {
   return (
@@ -9,7 +10,7 @@ function Button(props) {
       }  ${style[props.background]}`}
     >
       <img className={style.img} src={props.img} alt={props.altImg} />
-      <a>{props.label}</a>
+      <Link>{props.label}</Link>
     </div>
   );
 }
