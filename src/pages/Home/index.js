@@ -45,6 +45,7 @@ function Home() {
     lazyLoad: "ondemand",
     autoplay: "true",
     fade: "true",
+    autoplaySpeed: "1000",
 
     beforeChange: (prev, next) => {
       setSlide(next);
