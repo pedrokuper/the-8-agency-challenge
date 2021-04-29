@@ -10,7 +10,7 @@ function Button(props) {
       }  ${style[props.background]}`}
     >
       <img className={style.img} src={props.img} alt={props.altImg} />
-      <Link>{props.label}</Link>
+      <Link to={props.path}>{props.label}</Link>
     </div>
   );
 }

@@ -14,10 +14,17 @@ function Navbar() {
           <Button label="menu" img={menuIcon} fontSize="xs" />
         </li>
         <li>
-          <img src={logo} alt="" />
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
         </li>
         <li>
-          <Button label="contact" img={contactImg} fontSize="xs" />
+          <Button
+            label="contact"
+            path="/contact"
+            img={contactImg}
+            fontSize="xs"
+          />
         </li>
       </ul>
     </nav>
