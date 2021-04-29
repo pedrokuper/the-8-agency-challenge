@@ -1,5 +1,10 @@
 import React from "react";
+
+//Components
 import Navbar from "../../components/Navbar";
+import Input from "../../components/Input";
+
+//Assets
 import map from "../../assets/map.png";
 
 //Contact icons
@@ -54,7 +59,16 @@ function Contact(props) {
           </div>
         </div>
         <div>
-          
+          <Input name="name" type="text" placeholder="Name" />
+          <Input name="email" type="email" placeholder="E-mail" />
+          <Input name="subject" type="text" placeholder="Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
         </div>
       </div>
       <div>

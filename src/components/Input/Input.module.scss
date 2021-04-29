@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.inputContainer {
+  .input {
+    font-size: 1rem;
+    padding: 5px 10px;
+    color: $secondary;
+    background-color: $inputs;
+    margin: 10px 0px;
+    border: none;
+  }
+}
