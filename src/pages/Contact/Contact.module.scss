@@ -1,0 +1,112 @@
+@import "../../styles/variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin-top: -75px;
+  display: flex;
+  box-sizing: border-box;
+  max-height: 1080px;
+  color: $secondary;
+  font-family: "Lato", sans-serif;
+
+  .contentWrapper {
+    padding: 50px;
+    background-color: #c2c2c2;
+    overflow: hidden;
+    width: 100%;
+
+    .socialContainer {
+      margin-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+
+      h4 {
+        width: 400px;
+        word-spacing: 10px;
+        font-size: 5ch;
+        padding: 0;
+        margin: 0;
+      }
+
+      .iconContainer {
+        font-size: 2rem;
+        align-self: flex-end;
+        margin-right: 360px;
+        & span {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .infoContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      a {
+        text-decoration: underline;
+      }
+      .contactWrapper {
+        .icon {
+          align-self: flex-start;
+          margin-right: 10px;
+        }
+
+        .envelope {
+          align-self: center;
+        }
+
+        span {
+          display: flex;
+          margin: 1rem 0rem;
+          align-items: flex-start;
+          vertical-align: text-top;
+          word-spacing: 0.75rem;
+        }
+      }
+
+      .contactInfo {
+        margin: 0 auto;
+        max-width: 350px;
+        margin-left: 300px;
+        letter-spacing: 2px;
+        font-size: 1rem;
+        line-break: normal;
+
+        p {
+          margin-bottom: 1rem;
+        }
+
+        h5 {
+          margin-bottom: 1rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .container {
+    
+      .textarea {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        background-color: #949494;
+        font-size: 1rem;
+        width: 100%;
+        border: none;
+
+        resize: none;
+        margin: 10px 0px;
+        padding: 10px 10px;
+
+        &::placeholder {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
