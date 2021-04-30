@@ -3,10 +3,17 @@
 .inputContainer {
   .input {
     font-size: 1rem;
-    padding: 5px 10px;
+    padding: 10px 10px;
     color: $secondary;
-    background-color: $inputs;
+    background-color: #949494;
     margin: 10px 0px;
     border: none;
+    width: 250px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+
+    &::placeholder {
+      color: $secondary;
+    }
   }
 }
