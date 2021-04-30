@@ -2,9 +2,12 @@
 
 @import "../../styles/variables";
 
+body {
+  overflow: hidden;
+}
 .home-container {
   position: relative;
-  margin-top: -80px;
+  margin-top: -70px;
   overflow: hidden;
   background-color: rgb(114, 123, 163);
 
