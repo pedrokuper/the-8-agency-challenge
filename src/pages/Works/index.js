@@ -6,12 +6,35 @@ import "./style.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FcNext } from "react-icons/fc";
 
 //Assets
 // import images from "../../data/projectImages.json";
 
 //Components
 import Navbar from "../../components/Navbar";
+
+function SampleNextArrow(props) {
+  const { className, style, onClick, FcNext } = props;
+  return (
+    <>
+      <div
+        className="slick-arrow slick-next fa fa-angle-left"
+        onClick={onClick}
+      />
+    </>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className="slick-arrow slick-prev fa fa-angle-left"
+      onClick={onClick}
+    />
+  );
+}
 
 function Works() {
   const images = [
@@ -32,20 +55,24 @@ function Works() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
-    <div>
+    <div className="wrapper">
       <Navbar />
-      <Slider {...settings}>
-        {images.map((img, i) => {
-          return (
-            <div className="carousel-container" key={i}>
-              <img className="img" src={img} alt="" />
-            </div>
-          );
-        })}
-      </Slider>
+      <div className="carousel-wrapper">
+        <Slider {...settings}>
+          {images.map((img, i) => {
+            return (
+              <div className="carousel-container" key={i}>
+                <img className="img" src={img} alt="" />
+              </div>
+            );
+          })}
+        </Slider>
+      </div>
     </div>
   );
 }

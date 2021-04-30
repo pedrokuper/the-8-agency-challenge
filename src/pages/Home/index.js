@@ -48,7 +48,7 @@ function Home() {
   };
 
   return (
-    <div className="wrapper">
+    <div>
       <Navbar />
 
       <div className="home-container">

@@ -1,24 +1,54 @@
 //Este estilo no es CSS Module como el resto porque sino no es posible hacer modificaciones en las clases de Slick, la librería de carouseles.
 
-.carousel-container {
-  margin-top: -60px;
-  background-color: black;
+@import "../../styles/variables";
 
-  height: 90vh;
+.wrapper {
+  .carousel-wrapper {
+    position: relative;
+    margin-top: -90px;
+  }
+  .carousel-container {
+    background-color: black;
 
-  .img {
-    margin: 0 auto;
-    width: 640px;
-    flex-shrink: 1;
+    .img {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+.slick-prev,
+.slick-next {
+  &::before,
+  ::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 2.5rem;
+    color: $secondary;
+    padding: 20px;
+    background-color: white;
   }
 }
 
 .slick-prev {
   z-index: 1;
   left: 25px;
+
+  &::before,
+  ::after {
+    content: "\f053";
+  }
 }
 
 .slick-next {
-  right: 15px;
+  right: 75px;
   z-index: 1;
+
+  &::before,
+  ::after {
+    content: "\f054";
+  }
+}
+
+.slick-slider {
+  mix-blend-mode: overlay;
 }
