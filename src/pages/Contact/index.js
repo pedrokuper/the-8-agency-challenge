@@ -82,8 +82,8 @@ function Contact(props) {
             ></textarea>
           </form>
         </div>
-        <div>
-          <img src={map} />
+        <div className={style.imgContainer}>
+          <img className={style.img} src={map} />
         </div>
       </div>
     </>

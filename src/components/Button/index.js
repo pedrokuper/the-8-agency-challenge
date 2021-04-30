@@ -8,11 +8,9 @@ function Button(props) {
   const [open, setOpen] = useState(false);
 
   function handleMenu() {
-    console.log("click");
     setOpen((prevState) => !prevState);
   }
 
-  console.log(open);
   return (
     <>
       {props.label === "menu" && (

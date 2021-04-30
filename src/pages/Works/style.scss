@@ -1,0 +1,24 @@
+//Este estilo no es CSS Module como el resto porque sino no es posible hacer modificaciones en las clases de Slick, la librería de carouseles.
+
+.carousel-container {
+  margin-top: -60px;
+  background-color: black;
+
+  height: 90vh;
+
+  .img {
+    margin: 0 auto;
+    width: 640px;
+    flex-shrink: 1;
+  }
+}
+
+.slick-prev {
+  z-index: 1;
+  left: 25px;
+}
+
+.slick-next {
+  right: 15px;
+  z-index: 1;
+}

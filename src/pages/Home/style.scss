@@ -1,3 +1,5 @@
+//Este estilo no es CSS Module como el resto porque sino no es posible hacer modificaciones en las clases de Slick, la librería de carouseles.
+
 @import "../../styles/variables";
 
 .home-container {
@@ -44,7 +46,7 @@
   bottom: 55px !important;
 }
 .dots {
-  height: 10px;
-  width: 10px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
 }

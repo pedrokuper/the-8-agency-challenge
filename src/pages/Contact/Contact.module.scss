@@ -1,24 +1,22 @@
 @import "../../styles/variables";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+body {
+  overflow: hidden;
 }
 
 .wrapper {
   margin-top: -75px;
   display: flex;
-  box-sizing: border-box;
-  max-height: 1080px;
+ 
+  padding: 0;
+
   color: $secondary;
   font-family: "Lato", sans-serif;
 
   .contentWrapper {
     padding: 50px;
     background-color: #c2c2c2;
-    overflow: hidden;
-    width: 100%;
-
+    width: 60%;
     .socialContainer {
       margin-top: 5rem;
       display: flex;
@@ -90,14 +88,14 @@
     }
 
     .container {
-    
       .textarea {
         font-family: "Lato", sans-serif;
         font-weight: 300;
         background-color: #949494;
         font-size: 1rem;
-        width: 100%;
+        width: 800px;
         border: none;
+        height: 100px;
 
         resize: none;
         margin: 10px 0px;
@@ -107,6 +105,13 @@
           color: $secondary;
         }
       }
+    }
+  }
+
+  .imgContainer {
+    overflow: hidden;
+    .img {
+      height: 100%;
     }
   }
 }

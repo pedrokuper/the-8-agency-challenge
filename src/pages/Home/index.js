@@ -23,6 +23,7 @@ function Home() {
 
   const settings = {
     draggable: false,
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 500,
@@ -30,9 +31,9 @@ function Home() {
     slidesToShow: 1,
     initialSlide: 0,
     cssEase: "ease",
-    lazyLoad: "ondemand",
+    lazyLoad: "progressive",
     autoplay: "true",
-    fade: "true",
+
     autoplaySpeed: "1000",
 
     beforeChange: (prev, next) => {
