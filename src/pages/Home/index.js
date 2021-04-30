@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./style.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import axios from "axios";
+
 import homeImages from "../../data/homeImages.json";
 
 //Components
@@ -11,18 +11,6 @@ import Navbar from "../../components/Navbar";
 
 function Home() {
   const [slide, setSlide] = useState(0);
-  // const [images, setImages] = useState([]);
-
-  // useEffect(() => {
-  //   getPictures();
-  // }, []);
-
-  // async function getPictures() {
-  //   const data = await axios.get(
-  //     "https://picsum.photos/v2/list?page=3&limit=5"
-  //   );
-  //   setImages(data.data);
-  // }
 
   const selected = {
     backgroundColor: "#D7D7D7",

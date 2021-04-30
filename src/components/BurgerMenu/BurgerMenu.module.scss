@@ -2,10 +2,20 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  z-index: 5;
+  z-index: 7;
   background-color: #fff;
   margin-top: 70px;
   margin-left: 35px;
+
+  &.burgerActive {
+    animation: burgerActive 1s ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  &.burgerClose {
+    animation: burgerClose 1s ease-in-out;
+    animation-fill-mode: both;
+  }
 
   .link {
     padding: 20px 35px;
@@ -14,5 +24,25 @@
     &:hover {
       background-color: #f4f2f5;
     }
+  }
+}
+
+@keyframes burgerActive {
+  0% {
+    left: -350px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes burgerClose {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: -350px;
   }
 }

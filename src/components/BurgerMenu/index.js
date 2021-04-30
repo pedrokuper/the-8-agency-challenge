@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./BurgerMenu.module.scss";
 
-function BurgerMenu() {
+function BurgerMenu(props) {
+  const isOpen = props.open ? style.burgerActive : style.burgerClose;
+
   return (
-    <div className={style.wrapper}>
+    <div className={`${style.wrapper} ${isOpen}`}>
       <Link className={style.link} to="/">
         Home
       </Link>
