@@ -15,7 +15,9 @@ function Button(props) {
   console.log(open);
   return (
     <>
-      {props.label === "menu" && <BurgerMenu onClick={handleMenu} open={open} />}
+      {props.label === "menu" && (
+        <BurgerMenu onClick={handleMenu} open={open} />
+      )}
       <div
         onClick={handleMenu}
         className={` ${style.container} ${style[props.fontSize]} ${

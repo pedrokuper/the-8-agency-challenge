@@ -6,15 +6,20 @@
   background-color: #fff;
   margin-top: 70px;
   margin-left: 35px;
+  left: -350px;
 
   &.burgerActive {
-    animation: burgerActive 1s ease-in-out;
-    animation-fill-mode: both;
+    position: absolute;
+    transition: left 1s ease-in-out;
+    left: 0px;
+    // animation: burgerActive 1s ease-in-out;
+    // animation-fill-mode: both;
   }
 
   &.burgerClose {
-    animation: burgerClose 1s ease-in-out;
-    animation-fill-mode: both;
+    position: absolute;
+    transition: left 1s ease-in-out;
+    left: -350px;
   }
 
   .link {
@@ -27,22 +32,22 @@
   }
 }
 
-@keyframes burgerActive {
-  0% {
-    left: -350px;
-  }
+// @keyframes burgerActive {
+//   0% {
+//     left: -350px;
+//   }
 
-  100% {
-    left: 0px;
-  }
-}
+//   100% {
+//     left: 0px;
+//   }
+// }
 
-@keyframes burgerClose {
-  0% {
-    left: 0px;
-  }
+// @keyframes burgerClose {
+//   0% {
+//     left: 0px;
+//   }
 
-  100% {
-    left: -350px;
-  }
-}
+//   100% {
+//     left: -350px;
+//   }
+// }
