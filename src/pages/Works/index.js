@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./style.scss";
 
@@ -37,6 +37,7 @@ function SamplePrevArrow(props) {
 }
 
 function Works() {
+  const [card, setShowCard] = useState(false);
   const images = [
     "https://i.postimg.cc/9QnRN7L8/proj-left.png",
     "https://i.postimg.cc/ncnDsZsk/proj-mid.png",
@@ -59,6 +60,15 @@ function Works() {
     prevArrow: <SamplePrevArrow />,
   };
 
+  function handleShowCard() {
+    setShowCard((prevState) => !prevState);
+  }
+  function handleHideCard() {
+    setShowCard((prevState) => !prevState);
+  }
+
+  const showCard = card ? "showCard" : "";
+
   return (
     <div className="wrapper">
       <Navbar />
@@ -66,8 +76,19 @@ function Works() {
         <Slider {...settings}>
           {images.map((img, i) => {
             return (
-              <div className="carousel-container" key={i}>
+              <div
+                onMouseLeave={() => img.includes("mid") && handleHideCard()}
+                onMouseEnter={() => img.includes("mid") && handleShowCard()}
+                className="carousel-container"
+                key={i}
+              >
                 <img className="img" src={img} alt="" />
+                {img.includes("mid") && (
+                  <div className={`card ${showCard}`}>
+                    <h4>Project name</h4>
+                    <p>Vivamus imperdiet hendrerit leo quis fringilla.</p>
+                  </div>
+                )}
               </div>
             );
           })}
